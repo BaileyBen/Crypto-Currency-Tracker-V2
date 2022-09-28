@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background-color: #26272b;
+    color: #f4f4f4;
+}
+
+img {
+    height: 25px;
+    width: 25px;
+}
+@media screen and (max-width: 770px) {
+    .hide-mobile {
+        display: none;
+    }
+}
