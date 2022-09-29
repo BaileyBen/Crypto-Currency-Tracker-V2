@@ -32,7 +32,9 @@ return (
     <Router basename="/Crypto-Currency-Tracker-V2">
     <Routes >
     <Route path='/' element={<Coins coins={coins} />}/>
-    <Route path="/info" element={<Info />}/>
+    <Route path="info/:coinId" element={<Info />}>
+    <Route path=":coinId"/>
+    </Route>
         </Routes>
 </Router>
 </div>
