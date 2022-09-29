@@ -5,5 +5,6 @@ Tracks top 10 Coins by market cap real-time data fetched from the Coin Gecko API
 * Completely mobile responsive
 * Login and Register feature
 * Extended Info page displays an extra 12 elements of Coin Data 
-![Screenshot (174)](https://user-images.githubusercontent.com/114370453/192974887-d77ba7d4-5f18-4d0d-8b30-51988752c183.png)
-![Screenshot (172)](https://user-images.githubusercontent.com/114370453/192973444-2cd73aa1-6df4-4f09-88df-a06a89910f3c.png)
+
+![Screenshot (177)](https://user-images.githubusercontent.com/114370453/193031041-e9d2958b-8eca-4b3f-a144-6e27dad0a8b6.png)
+![Screenshot (179)](https://user-images.githubusercontent.com/114370453/193031098-54a985c4-068d-4767-a3d8-3d7068f4cc70.png)
