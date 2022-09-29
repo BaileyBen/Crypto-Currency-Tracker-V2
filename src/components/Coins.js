@@ -8,7 +8,7 @@ const Coins = (props) => {
   return (
 
     <div>
-     <Navbar /> 
+     
     <Heading/>
         {props.coins.map(coins => {
             return (

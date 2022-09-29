@@ -3,7 +3,7 @@ import axios from 'axios';
 import { Sparklines, SparklinesLine } from 'react-sparklines';
 import { FaTwitter, FaFacebook, FaReddit, FaGithub } from 'react-icons/fa';
 
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
 const Info = () => {
   const [coin, setCoin] = useState({});
@@ -20,9 +20,12 @@ const Info = () => {
   }, []);
 
   return (
-    <div className='my-12 py-8 mr-5 pr-5 bg-[#26272b] border border-[#6900ff]/20 hover:border-[#6900ff]/70 p-3 ml-2 shadow-xl
+    <div className='my-5 py-8 mr-5 pr-5 bg-[#26272b] border border-[#6900ff]/20 hover:border-[#6900ff]/70 p-3 ml-2 shadow-xl
     '>
-      <button>Go Back</button>
+      <Link to={`/`}>
+      <button className='text-bold text-white bg-[#26272b] border shadow-xl border-[#6900ff]/40 hover:border-[#6900ff]/70 px-3 py-2
+      transform transition duration-500 hover:scale-110 '>Return Home</button>
+      </Link>
       <div className='flex py-8'>
         <img className='w-24 h-24 mr-8' src={coin.image?.large} alt='/' />
         <div>

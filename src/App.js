@@ -28,7 +28,7 @@ useEffect(() => {
 
 return (
 <div>
-    
+<Navbar /> 
     <Router basename="/Crypto-Currency-Tracker-V2">
     <Routes >
     <Route path='/' element={<Coins coins={coins} />}/>
