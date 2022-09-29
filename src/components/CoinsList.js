@@ -16,6 +16,7 @@ const CoinsList = (props) => {
         <div>
           <img className='w-10 h-10' src={props.coins.image} alt={props.coins.id} />
           <p className='uppercase'>[{props.coins.symbol}]</p>
+          <p className='text-sm text-yellow-500 hover:text-[#6900ff]'>[ More Info ]</p>
         </div>
         </Link>
         <p>${props.coins.current_price.toLocaleString()}</p>

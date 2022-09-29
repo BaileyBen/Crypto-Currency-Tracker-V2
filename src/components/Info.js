@@ -17,7 +17,7 @@ const Info = () => {
       setCoin(response.data);
       console.log(response.data);
     });
-  }, []);
+  }, [url]);
 
   return (
     <div className='my-5 py-8 mr-5 pr-5 bg-[#26272b] border border-[#6900ff]/20 hover:border-[#6900ff]/70 p-3 ml-2 shadow-xl
@@ -30,7 +30,7 @@ const Info = () => {
         <img className='w-24 h-24 mr-8' src={coin.image?.large} alt='/' />
         <div>
           <p className='text-3xl font-bold text-yellow-500'>{coin?.name} price</p>
-          <p className='text-semibold'>({coin.symbol?.toUpperCase()} / AUD)</p>
+          <p className='text-semibold'>({coin.symbol?.toUpperCase()} / USD)</p>
         </div>
   
       </div>

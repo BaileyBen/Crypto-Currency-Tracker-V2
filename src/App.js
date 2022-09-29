@@ -5,6 +5,7 @@ import Navbar from './components/Navbar'
 import Heading from './components/Heading'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Info from './components/Info'
+import Footer from './components/Footer'
 
 
 
@@ -23,7 +24,7 @@ useEffect(() => {
     }).catch((error) => {
         console.log(error)
     })
-}, [])
+}, [url])
 
 
 return (
@@ -37,6 +38,7 @@ return (
     </Route>
         </Routes>
 </Router>
+<Footer />
 </div>
 )
   
