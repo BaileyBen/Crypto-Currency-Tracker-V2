@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 import { AiOutlineInstagram } from 'react-icons/ai';
 import {
   FaFacebookF,
@@ -12,7 +13,7 @@ import {
 const Footer = () => {
   return (
     <div className='rounded-div mt-8 pt-8  border-[#6900ff] mr-3'>
-      <div className='grid md:grid-cols-2'>
+      <div className='grid md:grid-cols-2 '>
         <div className='flex justify-evenly w-full md:max-w-[300px] uppercase'>
           <div>
             <h2 className='font-bold text-yellow-500 '>Support</h2>
@@ -38,7 +39,7 @@ const Footer = () => {
             <div className='w-full md:w-[300px] py-4 relative'>
               <div className='flex justify-center md:justify-end py-4 md:py-0 md:pb-4 mt-[-1rem]'>
               </div>
-              <p className='text-yellow-500 text-center md:text-right '>Sign up for crypto news</p>
+              <p className='text-center md:text-right '>Sign up for crypto news</p>
               <div className='py-4'>
                 
               </div>

@@ -4,7 +4,7 @@ import React from 'react'
 const Heading = () => {
   return (
     <div>
-        <div className='border font-bold text-white border-[#6900ff]/30 p-3 rounded-full shadow-xl mt-2 pl-0 pr-10'>
+        <div className=' font-bold text-white bg-black/80 border border-[#6900ff]/40 p-3  shadow-xl mt-2 mr-2 ml-2 pr-10'>
         <div className='flex justify-between'>
         <h1></h1>
         <h1>Coin</h1>

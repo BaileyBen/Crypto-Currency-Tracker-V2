@@ -20,11 +20,11 @@ const Info = () => {
   }, [url]);
 
   return (
-    <div className='my-5 py-8 mr-5 pr-5 bg-[#26272b] border border-[#6900ff]/20 hover:border-[#6900ff]/70 p-3 ml-2 shadow-xl
+    <div className='my-5 py-7 mr-5 pr-5 bg-black/70 border border-[#6900ff]/50 hover:border-[#6900ff]/70 p-3 ml-2 shadow-xl
     '>
       <Link to={`/`}>
-      <button className='text-bold text-white bg-[#26272b] border shadow-xl border-[#6900ff]/40 hover:border-[#6900ff]/70 px-3 py-2
-      transform transition duration-500 hover:scale-110 '>Return Home</button>
+      <button className='text-bold text-white bg-black/70 border shadow-xl border-[#6900ff]/40 hover:border-[#6900ff]/70 px-3 py-2
+      transform transition duration-500 hover:scale-110 hover:text-[#6900ff]/50 hover:border-[#6900ff] '>Return Home</button>
       </Link>
       <div className='flex py-8'>
         <img className='w-24 h-24 mr-8' src={coin.image?.large} alt='/' />
