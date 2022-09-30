@@ -8,7 +8,7 @@ const CoinsList = (props) => {
     <div>
 
       
-      <div className='rounded-div border font-semibold text-gray-300 bg-black/70 hover:bg-black/90 border-[#6900ff]/50 pr-3 p-3 pl-5 rounded-lg shadow-2xl mt-2 mr-2 ml-2  
+      <div className='item-div border font-semibold text-gray-300 bg-black/70 hover:bg-black/90 border-[#6900ff]/50 pr-3 p-3 pl-5 rounded-lg shadow-2xl mt-2 mr-2 ml-2  
       transform transition duration-500 hover:scale-110 hover:border-[#6900ff]  '>
       <Link to={`/Info/${props.coins.id}`}>
       <div className='flex justify-between items-center'>
