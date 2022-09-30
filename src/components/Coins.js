@@ -2,6 +2,7 @@ import React from 'react'
 import CoinsList from '../components/CoinsList'
 import Heading from './Heading'
 import Navbar from './Navbar'
+import Trending from './Trending'
 
 
 const Coins = (props) => {
@@ -16,6 +17,7 @@ const Coins = (props) => {
                 <CoinsList coins={coins} key={coins.id} />
             )
         })}
+        <Trending />
     </div>
   )
 }

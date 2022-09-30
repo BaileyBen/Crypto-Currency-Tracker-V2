@@ -10,6 +10,7 @@ import Signin from './routes/Signin'
 import Signup from './routes/Signup'
 import { AuthContextProvider } from './context/AuthContext'
 import Account from './routes/Account'
+import Trending from './components/Trending'
 
 
 

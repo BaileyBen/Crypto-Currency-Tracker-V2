@@ -1,13 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import { Sparklines, SparklinesLine } from 'react-sparklines';
+import Trending from './Trending';
 
 
 const CoinsList = (props) => {
   return (
     <div>
 
-      
+      <div>
       <div className='item-div border font-semibold text-gray-300 bg-black/70 hover:bg-black/90 border-[#6900ff]/50 pr-3 p-3 pl-5 rounded-lg shadow-2xl mt-2 mr-2 ml-2  
       transform transition duration-500 hover:scale-110 hover:border-[#6900ff]  '>
       <Link to={`/Info/${props.coins.id}`}>
@@ -31,6 +32,8 @@ const CoinsList = (props) => {
         </div>
         </Link>
       </div>
+      </div>
+      
     </div>
   )
 }
