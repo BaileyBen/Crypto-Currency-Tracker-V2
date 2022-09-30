@@ -7,15 +7,15 @@ const CoinsList = (props) => {
   return (
     <div>
 
-  
-      <div className='border font-semibold text-gray-300 bg-black/80 hover:bg-black/90 border-[#6900ff]/50 p-3 rounded-full shadow-2xl mb-3 pl-10 pr-10
-      transform transition duration-500 hover:scale-110 hover:border-[#6900ff] mt-2 pr-3'>
+      
+      <div className='rounded-div border font-semibold text-gray-300 bg-black/70 hover:bg-black/90 border-[#6900ff]/50 pr-3 p-3 pl-5 rounded-lg shadow-2xl mt-2 mr-2 ml-2  
+      transform transition duration-500 hover:scale-110 hover:border-[#6900ff]  '>
       <Link to={`/Info/${props.coins.id}`}>
       <div className='flex justify-between items-center'>
         <p className='text-yellow-500'>{props.coins.market_cap_rank}</p>
         
         <div>
-          <img className='w-10 h-10' src={props.coins.image} alt={props.coins.id} />
+          <img className='w-6 mr-2 rounded-full' src={props.coins.image} alt={props.coins.id} />
           <p className='uppercase'>[{props.coins.symbol}]</p>
           
         </div>

@@ -12,7 +12,7 @@ import {
 
 const Footer = () => {
   return (
-    <div className='rounded-div mt-8 pt-8  border-[#6900ff] mr-3'>
+    <div className='footer-div pt-5  '>
       <div className='grid md:grid-cols-2 '>
         <div className='flex justify-evenly w-full md:max-w-[300px] uppercase'>
           <div>

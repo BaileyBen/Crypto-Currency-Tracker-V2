@@ -3,10 +3,18 @@
 @tailwind utilities;
 
 body {
-    background-color: #161618;
+    background-color: #18181a;
     color: #f4f4f4;
 }
+.rounded-div {
+@apply rounded-2xl shadow-xl  px-2 max-w-[1140px] w-full mx-auto
+bg-black/80 border border-[#6900ff]/40 hover:border-[#6900ff]/50
+  }
 
+.footer-div {
+@apply rounded-2xl shadow-xl pr-20 pl-20 mt-5 px-2 max-w-[1140px] w-full mx-auto
+bg-black/50 border border-[#6900ff]/40 hover:border-[#6900ff]/50
+      }
 
 @media screen and (max-width: 770px) {
     .hide-mobile {
