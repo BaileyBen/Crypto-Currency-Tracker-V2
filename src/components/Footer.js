@@ -18,19 +18,19 @@ const Footer = () => {
           <div>
             <h2 className='font-bold font-Kanit text-yellow-500 '>Support</h2>
             <ul>
-              <li className='text-sm py-2 font-Kanit'>Help Center</li>
-              <li className='text-sm py-2 font-Kanit'>Contact Us</li>
-              <li className='text-sm py-2 font-Kanit'>API Status</li>
-              <li className='text-sm py-2 font-Kanit'>Documentation</li>
+              <li className='text-sm py-2 font-Marc'>Help Center</li>
+              <li className='text-sm py-2 font-Marc'>Contact Us</li>
+              <li className='text-sm py-2 font-Marc'>API Status</li>
+              <li className='text-sm py-2 font-Marc'>Documentation</li>
             </ul>
           </div>
           <div>
             <h2 className='font-bold text-yellow-500 font-Kanit '>Info</h2>
             <ul>
-              <li className='text-sm py-2 font-Kanit'>About Us</li>
-              <li className='text-sm py-2 font-Kanit'>Careers</li>
-              <li className='text-sm py-2 font-Kanit'>Invest</li>
-              <li className='text-sm py-2 font-Kanit'>Legal</li>
+              <li className='text-sm py-2 font-Marc'>About Us</li>
+              <li className='text-sm py-2 font-Marc'>Careers</li>
+              <li className='text-sm py-2 font-Marc'>Invest</li>
+              <li className='text-sm py-2 font-Marc'>Legal</li>
             </ul>
           </div>
         </div>

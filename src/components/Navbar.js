@@ -2,19 +2,32 @@ import React from 'react'
 import {FaCoins} from 'react-icons/fa'
 import {useState} from 'react'
 import {AiOutlineClose, AiOutlineMenu} from 'react-icons/ai'
-import { Link} from 'react-router-dom'
+import { Link, useNavigate} from 'react-router-dom'
+import { UserAuth } from '../context/AuthContext';
+
 
 const Navbar = () => {
 
     const [nav, setNav] = useState(false)
+    const { user, logout } = UserAuth();
+    const navigate = useNavigate();
 
     const ToggleNav = () => {
       setNav(!nav)
     }
+
+    const handleSignOut = async () => {
+      try {
+        await logout();
+        navigate('/');
+      } catch (e) {
+        console.log(e.message);
+      }
+    };
  
   return (
     
-    <div className='flex justify-center font-Kanit text-2xl pt-3 bg-black/80 shadow-md pb-3   '>
+    <div className='flex justify-center pl-10 font-Kanit text-2xl pt-3 bg-black/80 shadow-md pb-3   '>
       
         <div className='icon text-yellow-500'>
         <FaCoins/>
@@ -27,23 +40,27 @@ const Navbar = () => {
             </Link>
            </div>
            
-    
+
+            {user?.email ? (
+                    <div className='flex ml-20 hide-mobile max-w-[80] mt-1 text-base'>
+                    <Link to="/account">
+                    <button className='w-full font-semibold rounded-xl shadow-xl text-yellow-500 hover:text-[#6900ff]'>Account</button>
+                    </Link>
+                    </div>
+              
+            ) : (
+              <div>
            <div className='flex ml-10 hide-mobile max-w-[80] mt-1 text-base'>
             <Link to="/signin">
            <button className='w-full font-semibold rounded-xl shadow-xl text-yellow-500 hover:text-[#6900ff]'>Login</button>
            </Link>
-           </div>
-           <div className='flex ml-10 hide-mobile max-w-[80] mt-1 text-base'>
+           
            <Link to="/signup">
-           <button className='w-full font-semibold rounded-xl shadow-xl text-yellow-500 hover:text-[#6900ff]'>Register</button>
+           <button className='w-full font-semibold rounded-xl pl-5 shadow-xl text-yellow-500 hover:text-[#6900ff]'>Register</button>
            </Link>
            </div>
-           <div className='flex ml-10 hide-mobile max-w-[80] mt-1 text-base'>
-           <Link to="/account">
-           <button className='w-full font-semibold rounded-xl shadow-xl text-yellow-500 hover:text-[#6900ff]'>Account</button>
-           </Link>
            </div>
-
+            )}
           <div className='flex ml-10 md:hidden'>
             
             <h1 className='text-sm'></h1>
