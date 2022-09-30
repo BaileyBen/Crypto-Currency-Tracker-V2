@@ -21,7 +21,7 @@ const Info = () => {
   }, [url]);
 
   return (
-    <div className='rounded-div my-12 py-12'>
+    <div className='info-div my-12 py-12'>
       <Link to={`/`}>
       <button className='text-bold text-white bg-black/70 border shadow-xl border-[#6900ff]/40 hover:border-[#6900ff]/70 px-3 py-2
       transform transition duration-500 hover:scale-110 hover:text-[#6900ff]/50 hover:border-[#6900ff] '>Return Home</button>
@@ -29,8 +29,8 @@ const Info = () => {
       <div className='flex py-8'>
         <img className='w-20 mr-8' src={coin.image?.large} alt='/' />
         <div>
-          <p className='text-3xl font-bold text-yellow-500'>{coin?.name} Price</p>
-          <p>({coin.symbol?.toUpperCase()} / USD)</p>
+          <p className='text-3xl font-bold font-Kanit text-yellow-500'>{coin?.name}</p>
+          <p className='font-Marc'>({coin.symbol?.toUpperCase()} / USD)</p>
         </div>
       </div>
 
@@ -40,7 +40,7 @@ const Info = () => {
             {coin.market_data?.current_price ? (
               <p className='text-3xl font-bold'>${coin.market_data.current_price.usd.toLocaleString()}</p>
             ) : null}
-            <p>7 Day</p>
+            <p className='font-Marc text-teal-400'>7 Day Chart</p>
           </div>
           <div>
             <Sparklines data={coin.market_data?.sparkline_7d.price}>
@@ -49,13 +49,13 @@ const Info = () => {
           </div>
           <div className='flex justify-between py-4'>
             <div>
-              <p className='text-gray-500 text-sm'>Market Cap</p>
+              <p className='text-gray-500 font-Kanit text-sm'>Market Cap</p>
               {coin.market_data?.market_cap ? (
                 <p className='text-lg'>${coin.market_data.market_cap.usd.toLocaleString()}</p>
               ) : null}
             </div>
             <div>
-              <p className='text-gray-500 text-sm'>Volume (24h)</p>
+              <p className='text-gray-500 font-Kanit text-sm'>Volume (24h)</p>
               {coin.market_data?.market_cap ? (
                 <p className='text-lg'>${coin.market_data.total_volume.usd.toLocaleString()}</p>
               ) : null}
@@ -64,13 +64,13 @@ const Info = () => {
 
           <div className='flex justify-between py-4'>
             <div>
-              <p className='text-gray-500 text-sm'>24h High</p>
+              <p className='text-gray-500 font-Kanit text-sm'>24h High</p>
               {coin.market_data?.high_24h ? (
                 <p className='text-lg'>${coin.market_data.high_24h.usd.toLocaleString()}</p>
               ) : null}
             </div>
             <div>
-              <p className='text-gray-500 text-sm'>24h Low</p>
+              <p className='text-gray-500 font-Kanit text-sm'>24h Low</p>
               {coin.market_data?.low_24h ? (
                 <p className='text-lg'>${coin.market_data.low_24h.usd.toLocaleString()}</p>
               ) : null}
@@ -79,25 +79,25 @@ const Info = () => {
         </div>
 
         <div>
-          <p className='text-xl font-bold text-yellow-500'>Market Stats</p>
+          <p className='text-xl font-semibold font-Kanit text-yellow-500'>Market Stats</p>
           <div className='flex justify-between py-4'>
             <div>
-              <p className='text-gray-500 text-sm'>Market Rank</p>
+              <p className='text-gray-500 font-Kanit text-sm'>Market Rank</p>
               <p className='text-lg'>{coin.market_cap_rank}</p>
             </div>
             <div>
-              <p className='text-gray-500 text-sm'>Hashing Algorithm</p>
+              <p className='text-gray-500 font-Kanit text-sm'>Hashing Algorithm</p>
               {coin.hashing_algorithm ? <p className='text-lg'>{coin.hashing_algorithm}</p> : null}
             </div>
             <div>
-              <p className='text-gray-500 text-sm'>Trust Score</p>
+              <p className='text-gray-500 font-Kanit text-sm'>Trust Score</p>
               {coin.tickers ? <p className='text-lg'>{coin.liquidity_score.toFixed(2)}</p> : null}
             </div>
           </div>
 
           <div className='flex justify-between py-4'>
             <div>
-              <p className='text-gray-500 text-sm'>Price Change (24h)</p>
+              <p className='text-gray-500 font-Kanit text-sm'>Price Change (24h)</p>
               {coin.market_data ? (
                 <p className='text-lg'>
                   {coin.market_data.price_change_percentage_24h.toFixed(2)}%
@@ -105,13 +105,13 @@ const Info = () => {
               ) : null}
             </div>
             <div>
-              <p className='text-gray-500 text-sm'>Price Change (7d)</p>
+              <p className='text-gray-500 font-Kanit text-sm'>Price Change (7d)</p>
               {coin.market_data ? (
                 <p className='text-lg'>{coin.market_data.price_change_percentage_7d.toFixed(2)}%</p>
               ) : null}
             </div>
             <div>
-              <p className='text-gray-500 text-sm'>Price Change (14d)</p>
+              <p className='text-gray-500 font-Kanit text-sm'>Price Change (14d)</p>
               {coin.market_data ? (
                 <p className='text-lg'>
                   {coin.market_data.price_change_percentage_14d.toFixed(2)}%
@@ -121,7 +121,7 @@ const Info = () => {
           </div>
           <div className='flex justify-between py-4'>
             <div>
-              <p className='text-gray-500 text-sm'>Price Change (30d)</p>
+              <p className='text-gray-500 font-Kanit text-sm'>Price Change (30d)</p>
               {coin.market_data ? (
                 <p className='text-lg'>
                   {coin.market_data.price_change_percentage_30d.toFixed(2)}%
@@ -129,7 +129,7 @@ const Info = () => {
               ) : null}
             </div>
             <div>
-              <p className='text-gray-500 text-sm'>Price Change (60d)</p>
+              <p className='text-gray-500 font-Kanit text-sm'>Price Change (60d)</p>
               {coin.market_data ? (
                 <p className='text-lg'>
                   {coin.market_data.price_change_percentage_60d.toFixed(2)}%
@@ -137,7 +137,7 @@ const Info = () => {
               ) : null}
             </div>
             <div>
-              <p className='text-gray-500 text-sm'>Price Change (1y)</p>
+              <p className='text-gray-500 font-Kanit text-sm'>Price Change (1y)</p>
               {coin.market_data ? (
                 <p >{coin.market_data.price_change_percentage_1y.toFixed(2)}%</p>
               ) : null}
@@ -154,8 +154,8 @@ const Info = () => {
       
            {/* Description */}
       <div className='py-4'>
-        <p className='text-xl font-bold text-yellow-500'>About {coin.name}</p>
-        <p dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(coin.description ? coin.description.en : ''),}} ></p>
+        <p className='text-xl font-bold font-Kanit text-yellow-500'>About {coin.name}</p>
+        <p className='font-Marc' dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(coin.description ? coin.description.en : ''),}} ></p>
       </div>
     </div>
   )

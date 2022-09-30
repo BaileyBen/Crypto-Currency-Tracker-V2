@@ -16,7 +16,7 @@ const CoinsList = (props) => {
         
         <div>
           <img className='w-6 mr-2 rounded-full' src={props.coins.image} alt={props.coins.id} />
-          <p className='uppercase'>[{props.coins.symbol}]</p>
+          <p className='uppercase font-Marc'>{props.coins.symbol}</p>
           
         </div>
         

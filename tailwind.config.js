@@ -5,7 +5,13 @@ module.exports = {
   ],
   theme: {
     
-    extend: {},
+    extend: {
+      fontFamily: {
+
+     Kanit: "'Krona One', sans-serif",
+     Marc: "'Quando', serif",
+      },
+    },
   },
   plugins: [],
 }

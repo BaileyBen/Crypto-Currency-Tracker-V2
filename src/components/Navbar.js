@@ -14,7 +14,7 @@ const Navbar = () => {
  
   return (
     
-    <div className='flex justify-center text-2xl pt-3 bg-black/80 shadow-md pb-3   '>
+    <div className='flex justify-center font-Kanit text-2xl pt-3 bg-black/80 shadow-md pb-3   '>
       
         <div className='icon text-yellow-500'>
         <FaCoins/>

@@ -16,21 +16,21 @@ const Footer = () => {
       <div className='grid md:grid-cols-2 '>
         <div className='flex justify-evenly w-full md:max-w-[300px] uppercase'>
           <div>
-            <h2 className='font-bold text-yellow-500 '>Support</h2>
+            <h2 className='font-bold font-Kanit text-yellow-500 '>Support</h2>
             <ul>
-              <li className='text-sm py-2'>Help Center</li>
-              <li className='text-sm py-2'>Contact Us</li>
-              <li className='text-sm py-2'>API Status</li>
-              <li className='text-sm py-2'>Documentation</li>
+              <li className='text-sm py-2 font-Kanit'>Help Center</li>
+              <li className='text-sm py-2 font-Kanit'>Contact Us</li>
+              <li className='text-sm py-2 font-Kanit'>API Status</li>
+              <li className='text-sm py-2 font-Kanit'>Documentation</li>
             </ul>
           </div>
           <div>
-            <h2 className='font-bold text-yellow-500 '>Info</h2>
+            <h2 className='font-bold text-yellow-500 font-Kanit '>Info</h2>
             <ul>
-              <li className='text-sm py-2'>About Us</li>
-              <li className='text-sm py-2'>Careers</li>
-              <li className='text-sm py-2'>Invest</li>
-              <li className='text-sm py-2'>Legal</li>
+              <li className='text-sm py-2 font-Kanit'>About Us</li>
+              <li className='text-sm py-2 font-Kanit'>Careers</li>
+              <li className='text-sm py-2 font-Kanit'>Invest</li>
+              <li className='text-sm py-2 font-Kanit'>Legal</li>
             </ul>
           </div>
         </div>
@@ -39,7 +39,7 @@ const Footer = () => {
             <div className='w-full md:w-[300px] py-4 relative'>
               <div className='flex justify-center md:justify-end py-4 md:py-0 md:pb-4 mt-[-1rem]'>
               </div>
-              <p className='text-center md:text-right '>Sign up for crypto news</p>
+              <p className='text-center font-Kanit md:text-right '>Sign up for crypto news</p>
               <div className='py-4'>
                 
               </div>
@@ -54,7 +54,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <p className='text-center py-4 text-yellow-500'>Powered by Coin Gecko</p>
+      <p className='text-center py-4 font-Kanit text-yellow-500'>Powered by Coin Gecko</p>
     </div>
   );
 };

@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+
+
 body {
     background-color: #18181a;
     color: #f4f4f4;
@@ -10,6 +14,11 @@ body {
 @apply rounded-2xl shadow-xl  px-2 pr-10 max-w-[1140px] w-full mx-auto
 bg-black/80 border border-[#6900ff]/40 hover:border-[#6900ff]/50
   }
+
+  .info-div {
+    @apply rounded-2xl shadow-xl  px-2 pr-10 pl-10 max-w-[1140px] w-full mx-auto
+    bg-black/80 border border-[#6900ff]/40 hover:border-[#6900ff]/50
+      }
 
   .item-div {
     @apply rounded-2xl shadow-xl  px-2 pr-3 max-w-[1140px] w-full mx-auto
