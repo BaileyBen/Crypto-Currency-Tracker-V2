@@ -5,7 +5,7 @@ const Heading = () => {
   return (
     <div>
         <div className='rounded-div font-bold text-white text-xl p-3   shadow-xl mb-5 mt-5 '>
-        <h1 className='absolute'>Rank</h1>
+        <h1 className='absolute text-yellow-500'>Rank</h1>
         <div className='flex justify-between'>
         <h1></h1>
         
