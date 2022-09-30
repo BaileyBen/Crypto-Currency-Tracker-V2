@@ -51,13 +51,13 @@ const Info = () => {
             <div>
               <p className='text-gray-500 text-sm'>Market Cap</p>
               {coin.market_data?.market_cap ? (
-                <p className='text-2xl'>${coin.market_data.market_cap.usd.toLocaleString()}</p>
+                <p className='text-lg'>${coin.market_data.market_cap.usd.toLocaleString()}</p>
               ) : null}
             </div>
             <div>
               <p className='text-gray-500 text-sm'>Volume (24h)</p>
               {coin.market_data?.market_cap ? (
-                <p className='text-2xl'>${coin.market_data.total_volume.usd.toLocaleString()}</p>
+                <p className='text-lg'>${coin.market_data.total_volume.usd.toLocaleString()}</p>
               ) : null}
             </div>
           </div>
@@ -66,13 +66,13 @@ const Info = () => {
             <div>
               <p className='text-gray-500 text-sm'>24h High</p>
               {coin.market_data?.high_24h ? (
-                <p className='text-2xl'>${coin.market_data.high_24h.usd.toLocaleString()}</p>
+                <p className='text-lg'>${coin.market_data.high_24h.usd.toLocaleString()}</p>
               ) : null}
             </div>
             <div>
               <p className='text-gray-500 text-sm'>24h Low</p>
               {coin.market_data?.low_24h ? (
-                <p className='text-2xl'>${coin.market_data.low_24h.usd.toLocaleString()}</p>
+                <p className='text-lg'>${coin.market_data.low_24h.usd.toLocaleString()}</p>
               ) : null}
             </div>
           </div>

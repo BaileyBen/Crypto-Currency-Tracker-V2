@@ -7,7 +7,7 @@ body {
     color: #f4f4f4;
 }
 .rounded-div {
-@apply rounded-2xl shadow-xl  px-2 max-w-[1140px] w-full mx-auto
+@apply rounded-2xl shadow-xl  px-2 pr-3 max-w-[1140px] w-full mx-auto
 bg-black/80 border border-[#6900ff]/40 hover:border-[#6900ff]/50
   }
 
