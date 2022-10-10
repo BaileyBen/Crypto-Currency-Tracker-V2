@@ -1,4 +1,4 @@
-View the website here:
+View the deployed website here:
 https://baileyben.github.io/Crypto-Currency-Tracker-V2
 
 Crypto Currency Tracker
